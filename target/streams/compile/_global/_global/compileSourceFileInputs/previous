@@ -1,0 +1,1 @@
+["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.13.3":{"hashes":[["/Users/robinevers/Documents/AoC-2019/src/main/scala/Day1/SumOfFuelRequirements.scala","2f15c1b012c4e711b552ac4ec74a3173391e5cfb"]],"lastModifiedTimes":[]}}]
