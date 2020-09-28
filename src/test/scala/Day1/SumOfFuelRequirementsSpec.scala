@@ -16,9 +16,9 @@ class SumOfFuelRequirementsSpec extends AnyFlatSpec with Matchers {
     val massToFuel2 = SumOfFuelRequirements.requiredFuel(14)
     massToFuel2 mustBe 2
     val massToFuel3 = SumOfFuelRequirements.requiredFuel(1969)
-    massToFuel3 mustBe 654
+    massToFuel3 mustBe 966
     val massToFuel4 = SumOfFuelRequirements.requiredFuel(100756)
-    massToFuel4 mustBe 33583
+    massToFuel4 mustBe 50346
   }
 
   "massesList" should "start with 74819 and end with 127943" in {
@@ -38,6 +38,6 @@ class SumOfFuelRequirementsSpec extends AnyFlatSpec with Matchers {
 
   "sum" should "equal 3380880" in {
     val answer = SumOfFuelRequirements.sumAll(fuelList)
-    answer mustBe 3380880
+    answer mustBe 5068454
   }
 }
