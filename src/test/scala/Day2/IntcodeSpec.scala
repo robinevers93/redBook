@@ -50,4 +50,12 @@ class IntcodeSpec extends AnyFlatSpec with Matchers {
   "runProgram" should "have 4138658 at position 0 when the program halts for replaced puzzle input" in {
     Intcode.executeProgram(newCsvFile, 0).head mustBe 4138658
   }
+
+  "findNounVerb" should "function on test case" in {
+    Intcode.findNounVerb(csvFile,4138658) mustBe 1202
+  }
+
+  "findNounVerb" should "equal ... for output 19690720" in {
+    Intcode.findNounVerb(csvFile,19690720) mustBe 7264
+  }
 }

@@ -49,4 +49,12 @@ object Intcode {
       case 99 => csvFile
     }
   }
+
+  @tailrec
+  def findNounVerb(csvFile: List[Int], output: Int, noun: Int = 0, verb: Int = 0): Int = {
+    if (executeProgram(replaceSecondTwoValues(csvFile, noun, verb)).head == output) 100 * noun + verb
+    else if (verb < 99)
+      findNounVerb(csvFile, output, noun, verb+1)
+    else findNounVerb(csvFile, output, noun+1, 0)
+  }
 }
