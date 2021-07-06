@@ -1,5 +1,0 @@
-package Articles
-
-class dataModels {
-
-}

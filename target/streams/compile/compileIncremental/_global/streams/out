@@ -1,15 +1,98 @@
-[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll sources are invalidated.[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
-[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0% of all sources[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /Users/robinevers/Documents/AoC-2019/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set(/Users/robinevers/Documents/AoC-2019/src/main/scala/Day5/OpCoder/OpCoder1.scala, /Users/robinevers/Documents/AoC-2019/src/main/scala/Day5/OpCoder/OpCoder0.scala, /Users/robinevers/Documents/AoC-2019/src/main/scala/Day5/OpCoder/OpCoder.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/Users/robinevers/Documents/AoC-2019/src/main/scala/Day5/NewIntcode.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Day5.NewIntcode, Day5.NewIntcode.OpCoder, Day5.NewIntcode.A)[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Day5.NewIntcode, Day5.NewIntcode.OpCoder, Day5.NewIntcode.A)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/Users/robinevers/Documents/AoC-2019/src/main/scala/Day5/OpCoder/OpCoder1.scala, /Users/robinevers/Documents/AoC-2019/src/main/scala/Day5/OpCoder/OpCoder0.scala, /Users/robinevers/Documents/AoC-2019/src/main/scala/Day5/OpCoder/OpCoder.scala, /Users/robinevers/Documents/AoC-2019/src/main/scala/Day5/NewIntcode.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Day5.NewIntcode, Day5.NewIntcode.OpCoder, Day5.NewIntcode.A[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding Day5.NewIntcode.A by Day5.NewIntcode.OpCoder[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 4 Scala sources to /Users/robinevers/Documents/AoC-2019/target/scala-2.13/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.3[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.3[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 51d9b394 for Scala compiler version 2.13.3[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 35515498 for Scala compiler version 2.13.3[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/robinevers/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/robinevers/Documents/AoC-2019/target/scala-2.13/classes:/Users/robinevers/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.0/scalactic_2.13-3.2.0.jar:/Users/robinevers/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.701216283 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 4.022857947 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from Day5.OpCoder.OpCoder...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Day5.OpCoder.OpCoder[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding Day5.OpCoder.OpCoder1 by Day5.OpCoder.OpCoder[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding Day5.OpCoder.OpCoder0 by Day5.OpCoder.OpCoder[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(Day5.OpCoder.OpCoder, Day5.OpCoder.OpCoder0, Day5.OpCoder.OpCoder1)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of Day5.OpCoder.OpCoder1: Set(UsedName(OpCoder,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of Day5.OpCoder.OpCoder0: Set(UsedName(OpCoder,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of Day5.NewIntcode: Set(UsedName(OpCoder,[Default]), UsedName(toString,[Default]), UsedName(executeOpcode1,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of Day5.NewIntcode: Set(UsedName(OpCoder,[Default]), UsedName(toString,[Default]), UsedName(executeOpcode1,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of Day5.NewIntcode: Set(UsedName(OpCoder,[Default]), UsedName(toString,[Default]), UsedName(executeOpcode1,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(Day5.OpCoder.OpCoder,ModifiedNames(changes = UsedName(OpCoder,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(!=,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName(notifyAll,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(finalize,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(executeOpcode1,[Default]), UsedName(executeOpcode2,[Default]), UsedName(notify,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]), UsedName(isInstanceOf,[Default]), UsedName(getClass,[Default]))) invalidates 4 classes due to The Day5.OpCoder.OpCoder has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(OpCoder,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(!=,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName(notifyAll,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(finalize,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(executeOpcode1,[Default]), UsedName(executeOpcode2,[Default]), UsedName(notify,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]), UsedName(isInstanceOf,[Default]), UsedName(getClass,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(Day5.OpCoder.OpCoder, Day5.OpCoder.OpCoder0, Day5.OpCoder.OpCoder1)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by member reference: Set(Day5.OpCoder.OpCoder1, Day5.OpCoder.OpCoder0, Day5.NewIntcode)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from Day5.NewIntcode.A...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Day5.NewIntcode.A[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(Day5.NewIntcode.A)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(Day5.NewIntcode.A,ModifiedNames(changes = UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(!=,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName($init$,[Default]), UsedName(notifyAll,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(finalize,[Default]), UsedName(Day5;NewIntcode;A;init;,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(notify,[Default]), UsedName(A,[Default]), UsedName(b,[Default]), UsedName(isInstanceOf,[Default]), UsedName(getClass,[Default]))) invalidates 1 classes due to The Day5.NewIntcode.A has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(!=,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName($init$,[Default]), UsedName(notifyAll,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(finalize,[Default]), UsedName(Day5;NewIntcode;A;init;,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(notify,[Default]), UsedName(A,[Default]), UsedName(b,[Default]), UsedName(isInstanceOf,[Default]), UsedName(getClass,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(Day5.NewIntcode.A)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from Day5.OpCoder.OpCoder1...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Day5.OpCoder.OpCoder1[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(Day5.OpCoder.OpCoder1)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of Day5.NewIntcode: Set(UsedName(Day5;OpCoder;OpCoder1;init;,[Default]), UsedName(OpCoder1,[Default]), UsedName(toString,[Default]), UsedName(executeOpcode1,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(Day5.OpCoder.OpCoder1,ModifiedNames(changes = UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(!=,[Default]), UsedName(Day5;OpCoder;OpCoder1;init;,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName(OpCoder1,[Default]), UsedName(notifyAll,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(finalize,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(executeOpcode1,[Default]), UsedName(executeOpcode2,[Default]), UsedName(notify,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]), UsedName(isInstanceOf,[Default]), UsedName(getClass,[Default]))) invalidates 2 classes due to The Day5.OpCoder.OpCoder1 has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(!=,[Default]), UsedName(Day5;OpCoder;OpCoder1;init;,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName(OpCoder1,[Default]), UsedName(notifyAll,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(finalize,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(executeOpcode1,[Default]), UsedName(executeOpcode2,[Default]), UsedName(notify,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]), UsedName(isInstanceOf,[Default]), UsedName(getClass,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(Day5.OpCoder.OpCoder1)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by member reference: Set(Day5.NewIntcode)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from Day5.NewIntcode.OpCoder...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Day5.NewIntcode.OpCoder[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(Day5.NewIntcode.OpCoder)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(Day5.NewIntcode.OpCoder,ModifiedNames(changes = UsedName(OpCoder,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(!=,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName($init$,[Default]), UsedName(notifyAll,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(finalize,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(notify,[Default]), UsedName(b,[Default]), UsedName(isInstanceOf,[Default]), UsedName(getClass,[Default]))) invalidates 1 classes due to The Day5.NewIntcode.OpCoder has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(OpCoder,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(!=,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName($init$,[Default]), UsedName(notifyAll,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(finalize,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(notify,[Default]), UsedName(b,[Default]), UsedName(isInstanceOf,[Default]), UsedName(getClass,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(Day5.NewIntcode.OpCoder)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from Day5.OpCoder.OpCoder0...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Day5.OpCoder.OpCoder0[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(Day5.OpCoder.OpCoder0)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of Day5.NewIntcode: Set(UsedName(Day5;OpCoder;OpCoder0;init;,[Default]), UsedName(toString,[Default]), UsedName(executeOpcode1,[Default]), UsedName(OpCoder0,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(Day5.OpCoder.OpCoder0,ModifiedNames(changes = UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(!=,[Default]), UsedName(Day5;OpCoder;OpCoder0;init;,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName(notifyAll,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(finalize,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(executeOpcode1,[Default]), UsedName(OpCoder0,[Default]), UsedName(executeOpcode2,[Default]), UsedName(notify,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]), UsedName(isInstanceOf,[Default]), UsedName(getClass,[Default]))) invalidates 2 classes due to The Day5.OpCoder.OpCoder0 has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(!=,[Default]), UsedName(Day5;OpCoder;OpCoder0;init;,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName(notifyAll,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]), UsedName(finalize,[Default]), UsedName(equals,[Default]), UsedName(toString,[Default]), UsedName(executeOpcode1,[Default]), UsedName(OpCoder0,[Default]), UsedName(executeOpcode2,[Default]), UsedName(notify,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]), UsedName(isInstanceOf,[Default]), UsedName(getClass,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(Day5.OpCoder.OpCoder0)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by member reference: Set(Day5.NewIntcode)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from Day5.NewIntcode...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Day5.NewIntcode[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(Day5.NewIntcode)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(Day5.NewIntcode,ModifiedNames(changes = UsedName(OpCoder,[Default]), UsedName(findNounVerb$default$3,[Default]), UsedName(executeProgram$default$2,[Default]), UsedName(executeProgram$default$4,[Default]), UsedName(executeOpcode1_,[Default]), UsedName(executeProgram$default$3,[Default]), UsedName(findNounVerb$default$4,[Default]), UsedName(a,[Default]), UsedName(finalize,[Default]), UsedName(opCoder0,[Default]), UsedName(executeOpcode1,[Default]), UsedName(findNounVerb,[Default]), UsedName(executeOpcode2,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]), UsedName(A,[Default]), UsedName(splitCSV,[Default]), UsedName(executeProgram,[Default]), UsedName(opCoder1,[Default]))) invalidates 1 classes due to The Day5.NewIntcode has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(OpCoder,[Default]), UsedName(findNounVerb$default$3,[Default]), UsedName(executeProgram$default$2,[Default]), UsedName(executeProgram$default$4,[Default]), UsedName(executeOpcode1_,[Default]), UsedName(executeProgram$default$3,[Default]), UsedName(findNounVerb$default$4,[Default]), UsedName(a,[Default]), UsedName(finalize,[Default]), UsedName(opCoder0,[Default]), UsedName(executeOpcode1,[Default]), UsedName(findNounVerb,[Default]), UsedName(executeOpcode2,[Default]), UsedName(executeOpcode3,[Default]), UsedName(executeOpcode4,[Default]), UsedName(A,[Default]), UsedName(splitCSV,[Default]), UsedName(executeProgram,[Default]), UsedName(opCoder1,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(Day5.NewIntcode)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
