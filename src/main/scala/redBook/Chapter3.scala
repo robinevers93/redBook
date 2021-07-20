@@ -140,6 +140,80 @@ object List {
     foldRight(lists, Nil: List[A])(append)
   }
 
+  /**3.16 Write a function that transforms a list of integers by adding 1 to each element*/
+  def addOne(list: List[Int]): List[Int] = {
+    val f = (x: Int, y: List[Int]) => Cons(x+1, y)
+    foldRight(list, List[Int]())(f)
+  }
 
+  /**3.17 Write a function that transforms a list of doubles into a list of strings*/
+  def listToString(list: List[Double]): List[String] = {
+    val f = (x: Double, y: List[String]) => Cons(x.toString, y)
+    foldRight(list, List[String]())(f)
+  }
 
+  /**3.18 Write a function for map*/
+  def map[A,B](list: List[A])(f: A => B): List[B] = {
+    val g = (x: A, y: List[B]) => Cons(f(x), y)
+    foldRight(list, List[B]())(g)
+  }
+
+  /**3.19 Write a function for filter*/
+  def filter[A](as: List[A])(f: A => Boolean): List[A] = {
+    val g = (x:A, y: List[A]) => if (f(x)) Cons(x, y) else y
+    foldRight(as, List[A]())(g)
+  }
+
+  /**3.20 Write a function for flatmap*/
+  def flatMap[A, B](as: List[A])(f: A => List[B]): List[B] =
+    concat(map(as)(f))
+
+  /**3.21 Use flatmap to implement filter*/
+  def filter2[A](as: List[A])(f: A => Boolean): List[A] = {
+    val g = (x: A) => if (f(x)) List(x) else List()
+    flatMap(as)(g)
+  }
+
+  /**3.22 Write a function that constructs a new list by adding entries of indexes*/
+  def addLists(list1: List[Int], list2: List[Int]): List[Int] = (list1, list2) match {
+    case(Nil, _) => Nil
+    case (_, Nil) => Nil
+    case (Cons(h1, t1), Cons(h2,t2)) => Cons(h1+h2, addLists(t1, t2))
+  }
+
+  /**3.23 Write a function that constructs a new list by adding entries of indexes*/
+  def zipWith[A](list1: List[A], list2: List[A])(f: (A,A) => A): List[A] = (list1, list2) match {
+    case(Nil, _) => Nil
+    case (_, Nil) => Nil
+    case (Cons(h1, t1), Cons(h2,t2)) => Cons(f(h1, h2), zipWith(t1, t2)(f))
+  }
+
+  /**3.24 (hard) Write a function that returns true if and only if a subsequence is found in a list*/
+  @tailrec
+  def startsWith[A](list: List[A], startList: List[A]): Boolean = (list, startList) match {
+    case (_, Nil) => true
+    case (Nil, _) => false
+    case (Cons(h1,t1), Cons(h2,t2)) => if (h1 == h2) startsWith(t1, t2) else false
+  }
+
+  @tailrec
+  def hasSubsequence[A](sup: List[A], sub: List[A]): Boolean = (sup, sub) match {
+    case (_, Nil) => true
+    case (Nil, _) => false
+    case (Cons(_,t1), _) => if (startsWith(sup, sub)) true else hasSubsequence(t1, sub)
+    }
 }
+
+sealed trait Tree[+A]
+case class Leaf[A](value: A) extends Tree[A]
+case class Branch[A](left: Tree[A], right: Tree[A]) extends Tree[A]
+
+  object Tree {
+
+    /** 3.25 Write a function size that counts the number of leaves and branches in a tree */
+    def size[A](t: Tree[A]): Int = t match {
+      case Leaf(_) => 1
+      case Branch(left, right) => 1 + size(left) + size(right)
+    }
+
+  }

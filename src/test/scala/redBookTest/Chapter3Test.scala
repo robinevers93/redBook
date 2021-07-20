@@ -2,7 +2,7 @@ package redBookTest
 
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.must.Matchers
-import redBook.{Cons, List}
+import redBook.{Branch, Cons, Leaf, List, Tree}
 
 class Chapter3Test extends AnyFlatSpec with Matchers {
 
@@ -92,6 +92,115 @@ class Chapter3Test extends AnyFlatSpec with Matchers {
 
     concatList mustBe l4
     //this basically does: append(list1, foldRight(...)) = append(list1, append( list2, foldRight(...))) etc.
+  }
+
+  //3.16
+  "addOne" should "add 1 to each element in a list" in {
+    val list = List(1, 2, 3, 4)
+    val newList = List(2, 3, 4, 5)
+
+    List.addOne(list) mustBe newList
+  }
+
+  //3.17
+  "listToString" should "add turn Doubles in a list into String values" in {
+    val list = List(0.1, 0.2, 0.3, 0.4)
+    val newList = List("0.1", "0.2", "0.3", "0.4")
+
+    List.listToString(list) mustBe newList
+  }
+
+  //3.18
+  "map" should "function as map" in {
+    val list = List(0.1, 0.2, 0.3, 0.4)
+    val newList = List("0.1", "0.2", "0.3", "0.4")
+    val f = (x:Double) => x.toString
+
+    List.map(list)(f) mustBe newList
+
+    val list2 = List(1, 2, 3, 4)
+    val newList2 = List(2, 3, 4, 5)
+    val g = (x:Int) => x+1
+
+    List.map(list2)(g) mustBe newList2
+  }
+
+  //3.19
+  "filter" should "function as filter" in {
+    val list = List(0.1, 0.2, 0.3, 0.4)
+    val newList = List(0.3, 0.4)
+    val f: Double => Boolean = (x: Double) => x > 0.2
+
+    List.filter(list)(f) mustBe newList
+
+    val list2 = List(1, 2, 3, 4)
+    val newList2 = List(1, 2, 4)
+    val g: Int => Boolean = (x: Int) => x != 3
+
+    List.filter(list2)(g) mustBe newList2
+  }
+
+  //3.20
+  "flatmap" should "function as flatmap" in {
+    val list = List(1,2,3)
+    val newList = List(1, 1, 2, 2, 3, 3)
+    val f: Int => List[Int] = (x: Int) => List(x, x)
+
+    List.flatMap(list)(f) mustBe newList
+  }
+
+  //3.21
+  "filter2" should "function as filter" in {
+    val list = List(0.1, 0.2, 0.3, 0.4)
+    val newList = List(0.3, 0.4)
+    val f: Double => Boolean = (x: Double) => x > 0.2
+
+    List.filter2(list)(f) mustBe newList
+
+    val list2 = List(1, 2, 3, 4)
+    val newList2 = List(1, 2, 4)
+    val g: Int => Boolean = (x: Int) => x != 3
+
+    List.filter2(list2)(g) mustBe newList2
+  }
+
+  //3.22
+  "addList" should "add entries of lists together" in {
+    val list = List(1,2,3)
+    val list2 = List(4,5,6)
+    val newList = List(5,7,9)
+
+    List.addLists(list, list2) mustBe newList
+  }
+
+  //3.23
+  "zipWith" should "add entries of lists together" in {
+    val list = List(1,2,3)
+    val list2 = List(4,5,6)
+    val f = (x: Int, y: Int) => x+y
+    val newList = List(5,7,9)
+
+    List.zipWith(list, list2)(f) mustBe newList
+  }
+
+  //3.24
+  "hasSubsequence" should "returns true if and only if a subsequence is found in a list" in {
+    val list = List(1,2,3)
+    val subList1 = List(1,2)
+    val subList2 = List(3)
+    val subList3 = List()
+    val notSubList = List(3,2)
+
+    List.hasSubsequence(list, subList1) mustBe true
+    List.hasSubsequence(list, subList2) mustBe true
+    List.hasSubsequence(list, subList3) mustBe true
+    List.hasSubsequence(list, notSubList) mustBe false
+  }
+
+  //3.25
+  "size" should "correctly count number of nodes in a tree" in {
+    val tree: Tree[Int] = Branch(Branch(Leaf(1), Leaf(2)), Leaf(3))
+    Tree.size(tree) mustBe 5
   }
 
 }
