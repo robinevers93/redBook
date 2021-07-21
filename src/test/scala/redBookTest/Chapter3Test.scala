@@ -203,4 +203,51 @@ class Chapter3Test extends AnyFlatSpec with Matchers {
     Tree.size(tree) mustBe 5
   }
 
+  //3.26
+  "maximum" should "correctly find the maximum of nodes in a tree" in {
+    val tree: Tree[Int] = Branch(Branch(Leaf(1), Leaf(2)), Leaf(3))
+    Tree.maximum(tree) mustBe 3
+    val tree2: Tree[Int] = Branch(Branch(Leaf(10), Leaf(2)), Leaf(3))
+    Tree.maximum(tree2) mustBe 10
+  }
+
+  //3.27
+  "depth" should "correctly return the depth of a tree" in {
+    val tree: Tree[Int] = Branch(Branch(Leaf(1), Leaf(2)), Leaf(3))
+    Tree.depth(tree) mustBe 2
+    val tree2: Tree[Int] = Branch(Branch(Leaf(10), Branch(Leaf(1), Branch(Leaf(1), Leaf(2)))), Leaf(3))
+    Tree.depth(tree2) mustBe 4
+  }
+
+  //3.28
+  "map" should "work correctly on a tree" in {
+    val tree: Tree[Int] = Branch(Branch(Leaf(1), Leaf(2)), Leaf(3))
+    val f = (x:Int) => x+3
+    val treeMapped: Tree[Int] = Branch(Branch(Leaf(4), Leaf(5)), Leaf(6))
+
+    Tree.map(tree)(f) mustBe treeMapped
+  }
+
+  //3.29
+  "fold" should "work correctly on a tree" in {
+    val tree1: Tree[Int] = Branch(Branch(Leaf(1), Leaf(2)), Leaf(3))
+    Tree.sizeFromFold(tree1) mustBe 5
+
+    val tree2: Tree[Int] = Branch(Branch(Leaf(1), Leaf(2)), Leaf(3))
+    Tree.maxFromFold(tree2) mustBe 3
+    val tree3: Tree[Int] = Branch(Branch(Leaf(10), Leaf(2)), Leaf(3))
+    Tree.maxFromFold(tree3) mustBe 10
+
+    val tree4: Tree[Int] = Branch(Branch(Leaf(1), Leaf(2)), Leaf(3))
+    Tree.depthFromFold(tree4) mustBe 2
+    val tree5: Tree[Int] = Branch(Branch(Leaf(10), Branch(Leaf(1), Branch(Leaf(1), Leaf(2)))), Leaf(3))
+    Tree.depthFromFold(tree5) mustBe 4
+
+    val tree: Tree[Int] = Branch(Branch(Leaf(1), Leaf(2)), Leaf(3))
+    val f = (x:Int) => x+3
+    val treeMapped: Tree[Int] = Branch(Branch(Leaf(4), Leaf(5)), Leaf(6))
+
+    Tree.mapFromFold(tree)(f) mustBe treeMapped
+  }
+
 }
