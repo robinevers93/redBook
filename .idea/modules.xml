@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/redBook.iml" filepath="$PROJECT_DIR$/.idea/modules/redBook.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/redBook-build.iml" filepath="$PROJECT_DIR$/.idea/modules/redBook-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AoC-2019.iml" filepath="$PROJECT_DIR$/.idea/modules/AoC-2019.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AoC-2019-build.iml" filepath="$PROJECT_DIR$/.idea/modules/AoC-2019-build.iml" />
     </modules>
   </component>
 </project>

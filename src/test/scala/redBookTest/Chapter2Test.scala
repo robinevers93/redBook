@@ -2,7 +2,7 @@ package redBookTest
 
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.must.Matchers
-import redBook.Chapter2
+import redBook.Chapter2._
 
 class Chapter2Test extends AnyFlatSpec with Matchers {
 

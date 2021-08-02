@@ -1,5 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/robinevers/Documents/AoC-2019/src/main/scala/Day5/NewIntcode.scala:38:23: not enough arguments for method executeProgram: (csvFile: List[Int], input: Int, output: List[Int], index: Int)(implicit opCoder: Day5.OpCoder.OpCoder): (List[Int], List[Int]).[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter input.[0m
-[0m[[0m[31merror[0m] [0m[0m    if (executeProgram(replaceSecondTwoValues(csvFile, noun, verb)).head == output) 100 * noun + verb[0m
-[0m[[0m[31merror[0m] [0m[0m                      ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/robinevers/Documents/Functional Programming in Scala/src/main/scala/redBook/Chapter3/List.scala:53:62: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    def go(l: List[A], newList: List[A] = List()): List[A] = l match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/robinevers/Documents/Functional Programming in Scala/src/main/scala/redBook/Chapter3/List.scala:64:5: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    l match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
