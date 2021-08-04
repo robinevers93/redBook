@@ -1,9 +1,0 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/robinevers/Documents/Functional Programming in Scala/src/main/scala/redBook/Chapter3/List.scala:53:62: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: Nil[0m
-[0m[[0m[33mwarn[0m] [0m[0m    def go(l: List[A], newList: List[A] = List()): List[A] = l match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                                             ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/Users/robinevers/Documents/Functional Programming in Scala/src/main/scala/redBook/Chapter3/List.scala:64:5: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: Nil[0m
-[0m[[0m[33mwarn[0m] [0m[0m    l match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
