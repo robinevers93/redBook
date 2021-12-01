@@ -1,4 +1,4 @@
-name := "AoC-2019"
+name := "Red-Book"
 
 version := "0.1"
 
